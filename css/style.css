@@ -1,0 +1,273 @@
+@font-face {
+    font-family: 'barlow';
+    src: url('/font/Barlow-Regular.woff2') format('woff2');
+}
+
+:root {
+    --color-background: #EFF6FF;
+    --color-text: #2A4A5C;
+    --color-fb: #255A9B;
+    --color-in: #0076B6;
+    --color-cabttn: #3698FB;
+    --color-titletxt: #7B8A92;
+    --color-htext: #96A5B1;
+    --color-graytext: #AFAFAF;
+    --color-border: #eeeeee;
+    --color-white:#ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'barlow';
+    color: var(--color-text);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--color-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    padding: 20px;
+    font-size: 100%;
+    width: 45%;
+}
+
+form span {
+    padding-bottom: 10px;
+
+}
+
+.or {
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    left: 14.78rem;
+}
+
+.or:before {
+    content: " ";
+    background: var(--color-titletxt);
+    width: 150px;
+    height: 1px;
+    left: -240px;
+    top: 13px;
+    position: absolute;
+}
+
+.or:after{ 
+    content: " ";
+    background: var(--color-titletxt);
+    width: 150px;
+    height: 1px;
+    right: -232px;
+    top: 13px;
+    position: absolute;
+}
+.hero {
+    width: 80%;
+    height: 70%;
+    display: flex;
+    background-color: var(--color-white);
+}
+
+.form-head h2 {
+    /* margin: 0; */
+}
+
+.form-head span {
+    margin-bottom: 20px;
+}
+
+.email {
+    border: 1px solid var(--color-white);
+    border-left: solid 2px var(--color-cabttn);
+    width: 180px;
+    height: 52px;
+}
+
+.email input {
+    border: 0px;
+    height: 2rem;
+}
+
+.phone {
+    border: 0px;
+    border-left:solid 2px var(--color-cabttn);
+    width: 180px;
+    height: 52px;
+}
+
+.phone input {
+    border: 0px;
+    height: 2rem;
+}
+
+.phone input::selection {
+    border: solid 10px blue;
+}
+
+.background {
+    width: 55%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.background img:first-child {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.background .logo {
+    position: relative;
+    top: 12px;
+    left: 15px;
+    width: 80px;
+    box-sizing: border-box;
+}
+.form-head {
+    padding-bottom: 40px;
+    position: relative;
+    color: var(--color-titletxt);
+}
+
+.form-bttn {
+    display: flex;
+    gap: 20px;
+}
+
+.fb-bttn {
+    padding: 10px 50px 10px 50px;
+    position: relative;
+    background-color: var(--color-fb);
+    border: 0px;
+    color: var(--color-white);
+
+}
+
+.l-bttn {
+    padding: 10px 50px 10px 50px;
+    position: relative;
+    background-color: var(--color-in);
+    border: 0px;
+    color: var(--color-white);
+}
+
+.fb-img {
+    width: 23px;
+    position: absolute;
+    left: 12px;
+    bottom: 6px;
+    
+}
+
+.l-img {
+    width: 23px;
+    position: absolute;
+    bottom: 6px;
+    left: 12px;
+}
+
+.user-data {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.form-with-radio .head {
+    margin-bottom: 30px;
+}
+
+.radios {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    font-size: 1.1rem;
+}
+
+.radios label, input {
+    margin: 0;
+    padding: 0;
+}
+.radios:before{
+    cursor: pointer;
+}
+
+.radio1,
+.radio2,
+.radio3,
+.radio4 {
+    position: relative;
+}
+
+.hide-hint {
+    position: absolute;
+    top: 0.47rem;
+    left: 6.3rem;
+    width: 0.7rem;
+    height: 0.7rem;
+    border: 1px solid  var(--color-text);
+    text-align: center;
+    margin: auto;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.hide-hint::before {
+    content: 'i';
+    color: var(--color-text);
+    font-size: 0.7rem;
+    position: absolute;
+    top: -0.15rem;
+    left: 0.21rem;
+
+}
+
+.hint {
+   background-color: var(--color-background);
+   font-size: 1rem;
+   line-height: 1.5rem;
+   width: 20rem;
+   padding: 1rem 1.5rem;
+   border-radius: 0.5rem;
+   box-shadow: 0 0 20px
+   black;
+    z-index: 1000;
+    transform: translate(-50%, 20%);
+    position: absolute;
+    left: 50%;
+    display: none;
+}
+
+.hint::before {
+    position: absolute;
+    content: ' ';
+    width: 0;
+    height: 0;
+    border: 10px solid var(--color-white) transparent;
+    top: -18px;
+    left: 49%;
+}
+
+.hide-hint:hover .hint {
+    display: block;
+}
+
+.ca-bttn button {
+    padding: 10px 100px 10px 100px;
+    background-color: var(--color-cabttn);
+    color: var(--color-white);
+    border: 0px;
+    border-radius: 5px;
+}
