@@ -32,6 +32,7 @@ body {
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
+    
 }
 
 form {
@@ -74,10 +75,12 @@ form span {
 }
 .hero {
     box-sizing: border-box;
-    width: 80%;
-    height: 70%;
+    width: 85%;
+    height: 90%;
     display: flex;
     background-color: var(--color-white);
+    box-shadow: 0 0 20px
+    var(--color-border);
 }
 
 .form-head span {
@@ -201,7 +204,7 @@ border-left: solid 2px var(--color-cabttn);
 .radios {
     margin-bottom: 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     position: relative;
     font-size: 1.1rem;
 }
@@ -209,9 +212,6 @@ border-left: solid 2px var(--color-cabttn);
 .radios label, input {
     margin: 0;
     padding: 0;
-}
-.radios:before{
-    cursor: pointer;
 }
 
 .radio1,
@@ -222,9 +222,9 @@ border-left: solid 2px var(--color-cabttn);
 }
 
 .hide-hint {
-    position: absolute;
-    top: 0.47rem;
-    left: 6.3rem;
+    position: relative;
+    top: -0.9rem;
+    left: 3.3rem;
     width: 0.7rem;
     height: 0.7rem;
     border: 1px solid  var(--color-text);
