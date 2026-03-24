@@ -73,14 +73,11 @@ form span {
     position: absolute;
 }
 .hero {
+    box-sizing: border-box;
     width: 80%;
     height: 70%;
     display: flex;
     background-color: var(--color-white);
-}
-
-.form-head h2 {
-    /* margin: 0; */
 }
 
 .form-head span {
@@ -88,31 +85,43 @@ form span {
 }
 
 .email {
-    border: 1px solid var(--color-white);
-    border-left: solid 2px var(--color-cabttn);
+    margin: 0;
+    padding: 0;
+    border: 1px solid var(--color-graytext);
     width: 180px;
     height: 52px;
 }
 
 .email input {
     border: 0px;
-    height: 2rem;
+    height: 1rem;
+    width: 11.1rem;
+    outline: none;
+}
+
+.email:focus-within {
+border-left: solid 2px var(--color-cabttn);
+
 }
 
 .phone {
-    border: 0px;
-    border-left:solid 2px var(--color-cabttn);
+    margin: 0;
+    padding: 0;
+    border: 1px solid var(--color-graytext);
     width: 180px;
     height: 52px;
 }
 
-.phone input {
-    border: 0px;
-    height: 2rem;
+.phone:focus-within {
+    border-left:solid 2px var(--color-cabttn);
 }
 
-.phone input::selection {
-    border: solid 10px blue;
+.phone input {
+    background-color: var(--color-background);
+    border: 0px solid;
+    width: 11.1rem;
+    height: 1rem;
+    outline: none;
 }
 
 .background {
@@ -237,9 +246,9 @@ form span {
 
 .hint {
    background-color: var(--color-background);
-   font-size: 1rem;
-   line-height: 1.5rem;
-   width: 20rem;
+   font-size: 0.7rem;
+   line-height: 1.0rem;
+   width: 14rem;
    padding: 1rem 1.5rem;
    border-radius: 0.5rem;
    box-shadow: 0 0 20px
