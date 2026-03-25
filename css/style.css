@@ -96,10 +96,25 @@ form span {
 }
 
 .email input {
+    background-color: var(--color-background);
     border: 0px;
     height: 1rem;
     width: 11.1rem;
     outline: none;
+}
+
+.email input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.email input:-webkit-autofill,
+.email input:-webkit-autofill:hover, 
+.email input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+  box-shadow: 0 0 0px 1000px white inset !important;
+  -webkit-text-fill-color: #333 !important;
+  color: #333 !important;
 }
 
 .email:focus-within {
@@ -125,6 +140,20 @@ border-left: solid 2px var(--color-cabttn);
     width: 11.1rem;
     height: 1rem;
     outline: none;
+    box-shadow: none;
+}
+
+.phone input:-webkit-autofill,
+.phone input:-webkit-autofill:hover, 
+.phone input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+  box-shadow: 0 0 0px 1000px white inset !important;
+  -webkit-text-fill-color: #333 !important;
+  color: #333 !important;
+}
+.phone input:focus {
+    outline: none;
+    box-shadow: none;
 }
 
 .background {
