@@ -172,9 +172,9 @@ border-left: solid 2px var(--color-cabttn);
 
 .background .logo {
     position: relative;
-    top: 12px;
-    left: 15px;
-    width: 80px;
+    top: 2rem;
+    left: 2rem;
+    width: 6rem;
     box-sizing: border-box;
 }
 .form-head {
